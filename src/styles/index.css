@@ -1,0 +1,125 @@
+:root {
+  /* Colors */
+  --color-primary: #1E5AA8; /* Royal Blue */
+  --color-secondary: #F76C1B; /* Construction Orange */
+  --color-accent: #4DB6AC; /* Mint Green */
+  --color-bg: #F9F9F9; /* Off White */
+  --color-text: #333333; /* Charcoal Grey */
+  --color-white: #ffffff;
+
+  /* Fonts */
+  --font-heading-en: 'Montserrat', sans-serif;
+  --font-heading-hi: 'Mukta', sans-serif;
+  --font-body-en: 'Open Sans', sans-serif;
+  --font-body-hi: 'Mukta', sans-serif;
+  --font-btn: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body-en);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading-en);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-btn);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #16437e; /* Darker shade of Royal Blue */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 90, 168, 0.4);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-action {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-action:hover {
+  background-color: #d85a12; /* Darker shade of Orange */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 108, 27, 0.4);
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 12px;
+  font-family: var(--font-btn);
+  transition: color 0.2s;
+}
+
+.nav-item.active {
+  color: var(--color-primary);
+}
+
+.nav-item:hover {
+  color: var(--color-primary);
+}
+
+.pb-nav {
+  padding-bottom: 80px;
+}
