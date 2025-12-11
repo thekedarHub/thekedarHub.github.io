@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search as SearchIcon, Filter, MapPin, Star } from 'lucide-react';
+import { Search as SearchIcon, MapPin, Star } from 'lucide-react';
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');

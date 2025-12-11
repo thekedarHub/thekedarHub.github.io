@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, MapPin, Camera, FileText, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 
 const BookSurvey = () => {
   const [formData, setFormData] = useState({

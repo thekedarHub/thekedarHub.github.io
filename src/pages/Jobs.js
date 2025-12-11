@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, CheckCircle, AlertCircle, DollarSign, Calendar } from 'lucide-react';
+import { Clock, CheckCircle, AlertCircle, Calendar } from 'lucide-react';
 
 const Jobs = () => {
   const [activeTab, setActiveTab] = useState('ongoing');
